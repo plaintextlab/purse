@@ -109,5 +109,4 @@ dependencies {
     implementation(libs.work.runtime.ktx)
     implementation(libs.glance.appwidget)
     implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.jgit)
 }

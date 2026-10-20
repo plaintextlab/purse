@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-// Platform-independent logic: money parsing, SMS templates, sync file format.
-// No Android dependencies, so it can be unit tested on any JVM.
+// Platform-independent logic: money parsing, SMS templates, sync format and the
+// git sync engine. No Android dependencies, so it can be unit tested on any JVM.
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.kotlin.serialization)
@@ -18,6 +18,8 @@ kotlin {
 
 dependencies {
     api(libs.kotlinx.serialization.json)
+    implementation(libs.jgit)
     testImplementation(kotlin("test"))
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.core)
 }

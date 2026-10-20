@@ -106,7 +106,7 @@ build is signed with the same key, so updates install over each other.
 ### Layout
 
 ```
-android/core   pure Kotlin: money, wildcard + SMS templates, sync format/merge (unit tested)
-android/app    Compose UI, Room database, SMS receiver, JGit sync, Glance widget
+android/core   pure Kotlin/JVM: money, wildcard + SMS templates, sync format, git sync engine (unit tested)
+android/app    Compose UI, Room database, SMS receiver, sync scheduling, Glance widget
 docs/          sync format shared with future clients
 ```
