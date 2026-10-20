@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app_name is generated from the purse.appName Gradle property -->
+    <string name="widget_label">Purse overview</string>
+    <string name="widget_description">Balance, this month\'s spending and accounts</string>
+    <string name="shortcut_add">Add transaction</string>
+</resources>
